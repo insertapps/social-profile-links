@@ -1,6 +1,58 @@
-composer.phar
-/vendor/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+# WordPress core files (should not be in a theme repo)
+
+# Ignore sensitive environment files
+*.env
+
+# Node modules
+node_modules/
+
+# Composer dependencies
+vendor/
+
+# Log files
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.svn/
+*.swp
+*~
+
+# All files containing a _ in the file name before the extension.
+*_*.*
+
+# Build and output directories (if applicable)
+dist/
+build/
+assets/css/*.map
+assets/js/*.map
+
+# Ignore cache and lock files
+.pnpm-debug.log
+package-lock.json
+yarn.lock
+composer.lock
+
+# Ignore SASS/SCSS cache files
+.sass-cache/
+*.scssc
+
+# Temporary files
+.tmp/
+.cache/
+.idea/
+.vscode/
+*.bak
+*.old
